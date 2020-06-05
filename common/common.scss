@@ -1,12 +1,11 @@
 @import "common/foundation/variables";
 
 .d-header {
-    height: 100%;
     max-height: 116px;
     box-shadow: unset;
 
     & > .wrap .contents {
-        padding: 0 15px;
+        padding: 0 4px;
 
         @media screen and (max-width: 768px) {
           padding: 0;
@@ -23,6 +22,7 @@
       margin-left: 0;
       flex: 1;
       max-width: 1065px;
+      height: 50px; //experimental
 
       @media(max-width: 567px) {
         max-width: 333px;
@@ -45,9 +45,14 @@
 
   &-icons {
     position: relative;
-    display: block;
+    display: inherit; //changed from block
     margin-left: auto;
   }
+}
+
+//logo side
+.d-header #site-logo {
+    height: 3.6em;
 }
 
 .custom-header-links {

@@ -1,0 +1,22 @@
+.d-header {
+    height: 100%;
+}
+
+.nav-wrapper .nav-left li:not(:last-child) {
+    margin-right: 15px;
+}
+
+/*
+.menu-panel.drop-down {
+    top: 70% !important;
+}
+*/
+//hide main restarters nav buttons when scrolling down a topic
+.d-header.clearfix.hide-menus div.wrap span.header-buttons {
+    display: none;
+}
+
+// add spacing between logo and main restarters nav buttons
+.d-header .header-buttons {
+    margin-left: 50px;
+}
