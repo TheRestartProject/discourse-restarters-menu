@@ -147,6 +147,7 @@
       padding-top: 21px;
       position: relative;
       top: -23px;
+      text-decoration: underline;
 
       @media (max-width: 991.98px) {
         border-top: 0 !important;
@@ -161,7 +162,7 @@
     }
   }
 
-  .active {
+  .active, .talk {
     a {
       border-top: 7px solid #000000;
       margin-top: -5px;
