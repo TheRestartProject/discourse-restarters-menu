@@ -39,7 +39,7 @@
   }
 
   .header-buttons {
-    display: block;
+    display: flex;
     align-items: unset;
     margin-top: 0;
   }
@@ -48,6 +48,10 @@
     position: relative;
     display: inherit; //changed from block
     margin-left: auto;
+  }
+  .login-button {
+    height: 40px;
+    align-self: center;
   }
 }
 
