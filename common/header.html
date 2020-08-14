@@ -19,8 +19,8 @@
 
   customHeaderLinks.split("|").map(i => {
     const seg = $.map(i.split(","), $.trim);
-    const linkText = seg[0];
-    const linkTitle = seg[1];
+    let linkText = seg[0];
+    let linkTitle = seg[1];
 
     // Link text and title need internalisation.  No need to allow generic substitutions here for this simple menu bar,
     // so just handle the ones we need.
