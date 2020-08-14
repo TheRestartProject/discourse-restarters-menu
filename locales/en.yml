@@ -5,3 +5,10 @@ en:
     events: "Events"
     groups: "Groups"
     wiki: "Wiki"
+fr:
+  navbar:
+    talk: "Parler"
+    fixometer: "Le fix"
+    events: "Eventes"
+    groups: "Groupes"
+    wiki: "Wiki"
