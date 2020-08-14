@@ -3,10 +3,6 @@
   // his header links
   $('html').attr('dhp-locale', I18n.locale)
 
-  console.log("Entered header JS code");
-  console.log(I18n, themePrefix);
-  console.log(I18n.t(themePrefix('navbar.talk')));
-  console.log("Finished header");
   const customHeaderLinks = settings.restarters_menu;
   if (!customHeaderLinks.length) return;
 
@@ -25,10 +21,8 @@
     // Link text and title need internalisation.  No need to allow generic substitutions here for this simple menu bar,
     // so just handle the ones we need.
     ['talk', 'fixometer', 'events', 'groups', 'wiki'].forEach((k) => {
-      console.log("Replace", linkText, k, I18n.t(themePrefix('navbar.' + k)));
       linkText = linkText.replace('{{navbar.' + k + '}}', I18n.t(themePrefix('navbar.' + k)))
       linkTitle = linkTitle.replace('{{navbar.' + k + '}}', I18n.t(themePrefix('navbar.' + k)))
-      console.log("Replaced", linkText, linkTitle);
     });
 
     const linkHref = seg[2];
