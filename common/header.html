@@ -3,6 +3,10 @@
   // his header links
   $('html').attr('dhp-locale', I18n.locale)
 
+  console.log("Entered header JS code");
+  console.log(I18n, themePrefix);
+  console.log(I18n.t('navbar.talk'));
+  console.log("Finished");
   const customHeaderLinks = settings.restarters_menu;
   if (!customHeaderLinks.length) return;
 
