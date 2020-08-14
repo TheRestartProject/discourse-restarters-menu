@@ -26,8 +26,8 @@
     // so just handle the ones we need.
     ['talk', 'fixometer', 'events', 'groups', 'wiki'].forEach((k) => {
       console.log("Replace", k, I18n.t(themePrefix(k)));
-      linkText = linkText.replace('{{' + k + '}}', I18n.t(themePrefix(k)))
-      linkTitle = linkTitle.replace('{{' + k + '}}', I18n.t(themePrefix(k)))
+      linkText = linkText.replace('{{navbar.' + k + '}}', I18n.t(themePrefix(k)))
+      linkTitle = linkTitle.replace('{{navbar.' + k + '}}', I18n.t(themePrefix(k)))
     });
 
     const linkHref = seg[2];
