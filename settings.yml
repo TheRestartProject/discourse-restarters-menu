@@ -1,12 +1,11 @@
 restarters_menu:
   type: list
   default:
-    'Talk, Restarters Talk,
-    https://talk.restarters.net, vdm, self, keep, true, talk, restarters-talk-icon|Fixometer, Restarters Fixometer,
-    https://restarters.net, vdm, self, keep, true, fixometer, restarters-fixometer-icon|Events, Restarters Events,
-    https://restarters.net, vdm, self, keep, true, events, restarters-events-icon|Groups, Restarters Groups,
-    https://restarters.net, vdm, self, keep, true, groups, restarters-groups-icon|Wiki, Restarters Wiki,
-    https://wiki.restarters.net, vdm, self, keep, true, wiki, restarters-wiki-icon'
+    '{{navbar.talk}}, Restarters {{navbar.talk}},https://talk.restarters.net, vdm, self, keep, true, talk, restarters-talk-icon|
+    {{navbar.fixometer}}, Restarters {{navbar.fixometer}},https://restarters.net, vdm, self, keep, true, fixometer, restarters-fixometer-icon|
+    {{navbar.events}}, Restarters {{navbar.events}}, https://restarters.net, vdm, self, keep, true, events, restarters-events-icon|
+    {{navbar.groups}}, Restarters {{navbar.groups}}, https://restarters.net, vdm, self, keep, true, groups, restarters-groups-icon|
+    {{navbar.wiki}}, Restarters {{navbar.wiki}}, https://wiki.restarters.net, vdm, self, keep, true, wiki, restarters-wiki-icon'
   description:
     en:
       'Comma delimited in this order: link text, link title, URL, view, target,

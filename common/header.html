@@ -21,6 +21,15 @@
     const seg = $.map(i.split(","), $.trim);
     const linkText = seg[0];
     const linkTitle = seg[1];
+
+    // Link text and title need internalisation.  No need to allow generic substitutions here for this simple menu bar,
+    // so just handle the ones we need.
+    ['talk', 'fixometer', 'events', 'groups', 'wiki'].forEach((k) => {
+      console.log("Replace", k, I18n.t(themePrefix(k)));
+      linkText = linkText.replace('{{' + k + '}}', I18n.t(themePrefix(k))
+      linkTitle = linkTitle.replace('{{' + k + '}}', I18n.t(themePrefix(k))
+    });
+
     const linkHref = seg[2];
     const deviceClass = `.${seg[3]}`;
     const linkTarget = seg[4] === "self" ? "" : "_blank";
