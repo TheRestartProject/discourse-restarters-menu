@@ -67,6 +67,8 @@
   margin-left:0;
   .headerLink {
     list-style: none;
+    
+    min-width: 90px;
     height: 60px;
 
     @media(max-width: 991.98px) {
