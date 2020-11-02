@@ -68,16 +68,11 @@
   .headerLink {
     list-style: none;
 
-    min-width: 90px;
+    width: 90px;
     height: 56px;
 
-    @media(max-width: 991.98px) {
-      height: 100%;
-      min-height: 62px;
-    }
-
     @media screen and (max-width: 375px) {
-      min-width: 64px;
+      width: 64px;
       padding-bottom: 4px;
     }
 
@@ -164,16 +159,6 @@
       position: relative;
       top: -23px;
       text-decoration: underline;
-
-      @media (max-width: 991.98px) {
-        border-top: 0 !important;
-        border-bottom: 7px solid #000000;
-        top: 0 !important;
-        padding-top: 0 !important;
-        margin-top: 0 !important;
-        height: 47px;
-      }
-
       }
     }
   }
@@ -203,6 +188,25 @@
         display: none;
       }
     }
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 991.98px) {
+  .custom-header-links {
+    .active, .talk, li:hover {
+      border-bottom: 4px solid black;
+      padding-bottom: 0px;
+    }
+  }
+
+  .headerLink {
+    width: 90px;
+    margin: auto;
+    margin-right: auto !important;
+    padding-bottom: 4px;
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
   }
 }
 
