@@ -6,7 +6,8 @@ restarters_menu:
     https://restarters.net/fixometer, vdm, self, keep, true, fixometer, restarters-fixometer-icon|{{navbar.events}}, {{navbar.events}},
     https://restarters.net/party, vdm, self, keep, true, events, restarters-events-icon|{{navbar.groups}}, {{navbar.groups}},
     https://restarters.net/group, vdm, self, keep, true, groups, restarters-groups-icon|{{navbar.wiki}}, {{navbar.wiki}},
-    https://wiki.restarters.net, vdm, self, keep, true, wiki, restarters-wiki-icon'
+    https://wiki.restarters.net, vdm, self, keep, true, wiki, restarters-wiki-icon,
+    https://restarters.net/workbench, vdm, self, keep, true, wiki, restarters-workbench-icon|{{navbar.workbench}}, {{navbar.workbench}}'
   description:
     en:
       'Comma delimited in this order: link text, link title, URL, view, target,
