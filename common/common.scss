@@ -67,9 +67,16 @@
 
 //logo side
 .d-header #site-logo {
-  height: 49px;
-  width: 180px;
-  translate: 7px -3px;
+  &.logo-big {
+    height: 49px;
+    width: 180px;
+    translate: 7px -3px;
+  }
+
+  &.logo-small {
+    height: 3.6em;
+    width: auto;
+  }
 }
 
 .custom-header-links {
