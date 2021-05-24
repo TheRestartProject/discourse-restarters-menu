@@ -53,6 +53,15 @@
     height: 40px;
     align-self: center;
   }
+
+  .d-header-icons {
+    min-width: 186px;
+    max-width: 186px;
+
+    li:first-child {
+      margin-left: 67px;
+    }
+  }
 }
 
 //logo side
