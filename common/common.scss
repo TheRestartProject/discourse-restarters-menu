@@ -261,7 +261,7 @@
 .custom-header-links .headerLink a {
   margin-top: 33px;
 
-  &.active {
+  &:not(.active) {
     margin-top: 0px !important;
   }
 }
