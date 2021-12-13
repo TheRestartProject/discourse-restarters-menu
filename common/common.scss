@@ -96,6 +96,10 @@
 
     &.talk {
       padding-top: 67px;
+
+      &:hover {
+        padding-top: 0px;
+      }
     }
 
     @media screen and (max-width: 375px) {
