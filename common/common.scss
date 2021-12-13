@@ -260,6 +260,10 @@
 
 .custom-header-links .headerLink a {
   margin-top: 33px;
+
+  &.active {
+    margin-top: 0px !important;
+  }
 }
 
 .d-header #site-logo.logo-big {
