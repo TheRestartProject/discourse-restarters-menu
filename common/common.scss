@@ -253,3 +253,15 @@
     padding: initial;
   }
 }
+
+.custom-header-links .active a, .custom-header-links .talk a {
+  top: 3px;
+}
+
+.custom-header-links .headerLink a {
+  margin-top: 33px;
+}
+
+.d-header #site-logo.logo-big {
+  translate: 7px 30px;
+}
