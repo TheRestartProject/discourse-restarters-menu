@@ -78,7 +78,7 @@
 
 .custom-header-links {
   display: inline-flex;
-  align-items: center;
+  align-items: end;
   margin: 28px;
   margin-left:0;
   margin-right: 14px;
@@ -180,7 +180,7 @@
     a {
       border-top: 7px solid #000000;
       margin-top: -1px;
-      padding-top: 40px;
+      padding-top: 24px;
       position: relative;
       top: 3px;
       text-decoration: underline;
