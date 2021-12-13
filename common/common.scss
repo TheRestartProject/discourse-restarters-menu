@@ -22,7 +22,6 @@
       margin-left: 0;
       flex: 1;
       max-width: 1065px;
-      height: 50px; //experimental
 /*
       @media(max-width: 567px) {
         max-width: 333px;
@@ -41,7 +40,7 @@
   .header-buttons {
     display: flex;
     align-items: unset;
-    margin-top: 0;
+    margin-top: -65px;
     width: 100%;
   }
 
@@ -69,7 +68,7 @@
   &.logo-big {
     height: 49px;
     width: 180px;
-    translate: 7px 30px;
+    translate: 7px -2px;
   }
 
   &.logo-small {
