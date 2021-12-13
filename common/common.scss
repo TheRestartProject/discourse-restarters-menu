@@ -112,7 +112,6 @@
       text-transform: uppercase;
       height: 100%;
       padding-top: 33px;
-    }
 
       @media screen and (max-width: 991.98px) {
         margin-top: unset !important;
@@ -255,19 +254,3 @@
     padding: initial;
   }
 }
-
-.custom-header-links .active a, .custom-header-links .talk a {
-  top: 3px !important;
-}
-
-.custom-header-links .headerLink a {
-  margin-top: 0px !important;
-
-  &.active {
-    margin-top: 33px !important;
-  }
-}
-
-//.d-header #site-logo.logo-big {
-//  translate: 7px 30px;
-//}
