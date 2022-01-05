@@ -103,6 +103,14 @@
 
     @media screen and (max-width: 375px) {
       padding-bottom: 4px;
+
+      &.talk {
+        padding-top: 0px;
+
+        a {
+          top: 0px;
+        }
+      }
     }
 
     a {
