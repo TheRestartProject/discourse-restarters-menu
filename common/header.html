@@ -20,7 +20,7 @@
 
     // Link text and title need internalisation.  No need to allow generic substitutions here for this simple menu bar,
     // so just handle the ones we need.
-    ['talk', 'fixometer', 'events', 'groups', 'wiki'].forEach((k) => {
+    ['talk', 'fixometer', 'events', 'groups', 'wiki', 'workbench'].forEach((k) => {
       linkText = linkText.replace('{{navbar.' + k + '}}', I18n.t(themePrefix('navbar.' + k)))
       linkTitle = linkTitle.replace('{{navbar.' + k + '}}', I18n.t(themePrefix('navbar.' + k)))
     });
