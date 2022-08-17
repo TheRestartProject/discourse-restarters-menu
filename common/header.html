@@ -191,6 +191,13 @@
     // Hide the logo and the navbar in favour of the one we want.
     header.find('.title').hide()
     header.find('.header-buttons').hide()
+
+    // This next bit might only be necessary on dev - not sure.
+    $('#main-outlet').css({
+      'padding-top': '1em !important'
+    });
+
+    // No need for user avatar - we already have one in the global nav.
     $('#current-user .avatar').hide();
   }
 
