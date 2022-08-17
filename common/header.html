@@ -174,10 +174,21 @@
     }
 
     console.log('Add IFRAME', document, window, $('.d-header-wrap'));
-    var url = document.URL.indexOf('.net') > -1 ? 'https://www.restarters.net/' : 'https://www.restarters.dev/';
+    var url = document.URL.indexOf('.net') > -1 ? 'https://restarters.net/' : 'https://restarters.dev/';
     var inserted = $('<iframe src="' + url + 'navbar" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>').insertBefore('.d-header-wrap');
     console.log('Added IFRAME', inserted);
+
+    // Move the existing header to the right place.
+    header.css({
+      position: 'fixed',
+      top: '250px'
+    });
+
+    // Hide the logo and the navbar in favour of the one we want.
+    header.find('.title').css({ display:'none' })
+    header.find('.header-buttons').css({ display:'none' })
   }
+
 
   addIframe();
 </script>
