@@ -175,7 +175,7 @@
 
     console.log('Add IFRAME', document, window, $('.d-header-wrap'));
     var url = document.URL.indexOf('.net') > -1 ? 'https://www.restarters.net/' : 'https://www.restarters.dev/';
-    var inserted = $('.d-header-wrap').insertBefore('<iframe src="' + url + 'navbar" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>');
+    var inserted = $('<iframe src="' + url + 'navbar" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>').insertBefore('.d-header-wrap');
     console.log('Added IFRAME', inserted);
   }
 
