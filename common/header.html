@@ -162,9 +162,22 @@
     })
   }
 
-  // IFRAME in the global nav from Restarters.
-  console.log('Add IFRAME', document, window, $('.d-header-wrap'));
-  var url = document.URL.indexOf('.net') > -1 ? 'https://www.restarters.net/' : 'https://www.restarters.dev/';
-  var inserted = $('.d-header-wrap').insertBefore('<iframe src="' + url + 'navbar" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>');
-  console.log('Added IFRAME', inserted);
+  // IFRAME in the global nav from Restarters.  We have to wait for the wrapper to exist.
+  function addIframe() {
+    var header = $('.d-header-wrap')
+    console.log("Got header", header
+
+    if (!header.length) {
+      console.log("No header, waiting...")
+      setTimeout(addIframe, 100)
+      return
+    }
+
+    console.log('Add IFRAME', document, window, $('.d-header-wrap'));
+    var url = document.URL.indexOf('.net') > -1 ? 'https://www.restarters.net/' : 'https://www.restarters.dev/';
+    var inserted = $('.d-header-wrap').insertBefore('<iframe src="' + url + 'navbar" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>');
+    console.log('Added IFRAME', inserted);
+  }
+
+  addIframe();
 </script>
